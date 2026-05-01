@@ -33,6 +33,7 @@ if st.button("Predict"):
     input_data['sms_received']=sms_received
     input_data['hipertension']=hypertension
     input_data['diabetes']=diabetes
+    input_data['appointment_shift_afternoon']=0
 
     missing=[col for col in columns if col not in input_data]
     extra=[col for col in input_data if col not in columns]
